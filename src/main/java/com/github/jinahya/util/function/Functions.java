@@ -22,19 +22,18 @@ package com.github.jinahya.util.function;
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
  */
-public final class Consumers {
+public final class Functions {
 
 
-    public static <T> Consumer<T> andThen(final Consumer<T> before,
-                                          final Consumer<? super T> after) {
+    public static <T, R, V> Function<T, V> andThen(
+        final Function<T, R> f, final Function<? super R, ? extends V> after) {
 
-        return new Consumer<T>() {
+        return new Function<T, V>() {
 
 
             @Override
-            public void accept(final T t) {
-                before.accept(t);
-                after.accept(t);
+            public V apply(final T t) {
+                return after.apply(f.apply(t));
             }
 
 
@@ -42,7 +41,38 @@ public final class Consumers {
     }
 
 
-    private Consumers() {
+    public static <V, T, R> Function<V, R> compose(
+        final Function<? super V, ? extends T> before, final Function<T, R> f) {
+
+        return new Function<V, R>() {
+
+
+            public R apply(V v) {
+
+                return f.apply(before.apply(v));
+            }
+
+
+        };
+    }
+
+
+    public static <T> Function<T, T> identity() {
+
+        return new Function<T, T>() {
+
+
+            public T apply(final T t) {
+
+                return t;
+            }
+
+
+        };
+    }
+
+
+    private Functions() {
 
         super();
     }

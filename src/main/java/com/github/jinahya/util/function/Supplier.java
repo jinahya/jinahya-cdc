@@ -21,31 +21,12 @@ package com.github.jinahya.util.function;
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
+ * @param <T>
  */
-public final class Consumers {
+public interface Supplier<T> {
 
 
-    public static <T> Consumer<T> andThen(final Consumer<T> before,
-                                          final Consumer<? super T> after) {
-
-        return new Consumer<T>() {
-
-
-            @Override
-            public void accept(final T t) {
-                before.accept(t);
-                after.accept(t);
-            }
-
-
-        };
-    }
-
-
-    private Consumers() {
-
-        super();
-    }
+    T get();
 
 
 }

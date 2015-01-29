@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 Jin Kwon.
+ * Copyright 2015 Jin Kwon &lt;jinahya_at_gmail.com&gt;.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,23 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.jinahya.util;
+
+
+package com.github.jinahya.util.function;
 
 
 /**
  *
- * @author Jin Kwon
+ * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
+ * @param <T>
+ * @param <R>
  */
-public interface Queue {
+public interface Function<T, R> {
 
 
-    void enqueue(Object element);
-
-
-    Object dequeue();
-
-
-    int size();
+    R apply(T t);
 
 
 }

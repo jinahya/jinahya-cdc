@@ -21,11 +21,12 @@ package com.github.jinahya.util.function;
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
+ * @param <T>
  */
 public interface Consumer<T> {
 
 
-    public void accept(T t);
+    void accept(T t);
 
 
 }
