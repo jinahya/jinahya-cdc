@@ -27,26 +27,22 @@ public final class Predicates {
 
     public static final Predicate<?> PASS = new Predicate<Object>() {
 
-
         @Override
         public boolean test(final Object t) {
 
             return true;
         }
 
-
     };
 
 
     public static final Predicate<?> FAIL = new Predicate<Object>() {
-
 
         @Override
         public boolean test(final Object t) {
 
             return false;
         }
-
 
     };
 
@@ -55,13 +51,11 @@ public final class Predicates {
 
         return new Predicate<T>() {
 
-
             @Override
             public boolean test(final T t) {
 
                 return true;
             }
-
 
         };
     }
@@ -71,13 +65,11 @@ public final class Predicates {
 
         return new Predicate<T>() {
 
-
             @Override
             public boolean test(final T t) {
 
                 return false;
             }
-
 
         };
     }
@@ -88,12 +80,10 @@ public final class Predicates {
 
         return new Predicate<T>() {
 
-
             public boolean test(final T t) {
 
                 return p.test(t) && other.test(t);
             }
-
 
         };
     }
@@ -103,12 +93,10 @@ public final class Predicates {
 
         return new Predicate<T>() {
 
-
             public boolean test(T t) {
 
                 return targetRef == null ? t == null : targetRef.equals(t);
             }
-
 
         };
     }
@@ -118,12 +106,10 @@ public final class Predicates {
 
         return new Predicate<T>() {
 
-
             public boolean test(final T t) {
 
                 return !p.test(t);
             }
-
 
         };
     }
@@ -134,21 +120,18 @@ public final class Predicates {
 
         return new Predicate<T>() {
 
-
             public boolean test(final T t) {
 
                 return p.test(t) || other.test(t);
             }
 
-
         };
     }
 
 
-    public static <T> Predicate<T> isInstanceOf(final Class<?> type) {
+    public static <T> Predicate<T> checkingInstanceOf(final Class<?> type) {
 
         return new Predicate<T>() {
-
 
             @Override
             public boolean test(final T t) {
@@ -156,14 +139,7 @@ public final class Predicates {
                 return type.isInstance(t);
             }
 
-
         };
-    }
-
-
-    public static <T> Predicate<T> nonInstanceOf(final Class<?> type) {
-
-        return negate(Predicates.<T>isInstanceOf(type));
     }
 
 
