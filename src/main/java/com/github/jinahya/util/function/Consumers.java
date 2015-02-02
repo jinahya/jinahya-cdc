@@ -33,13 +33,11 @@ public final class Consumers {
 
         return new Consumer<T>() {
 
-
             @Override
             public void accept(final T t) {
                 before.accept(t);
                 after.accept(t);
             }
-
 
         };
     }
@@ -50,13 +48,11 @@ public final class Consumers {
 
         return new Consumer<T>() {
 
-
             @Override
             public void accept(final T t) {
 
                 collection.add(t);
             }
-
 
         };
 
@@ -69,7 +65,6 @@ public final class Consumers {
 
         return new Consumer<T>() {
 
-
             @Override
             public void accept(final T t) {
 
@@ -77,7 +72,6 @@ public final class Consumers {
                     consumer.accept(function.apply(t));
                 }
             }
-
 
         };
     }
