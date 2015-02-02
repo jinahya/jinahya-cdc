@@ -15,20 +15,44 @@
  */
 
 
-package com.github.jinahya.util.function;
+package com.github.jinahya.util;
 
 
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T>
- *
- * @see java.util.function.Predicate
  */
-public interface Predicate<T> {
+public final class Strings {
 
 
-    boolean test(T t);
+    public static boolean isEmpty(final String string) {
+
+        return string.isEmpty();
+    }
+
+
+    public static boolean nonEmpty(final String string) {
+
+        return !isEmpty(string);
+    }
+
+
+    public static boolean isTrimmedEmpty(final String string) {
+
+        return string.trim().isEmpty();
+    }
+
+
+    public static boolean nonTrimmedEmpty(final String string) {
+
+        return !isTrimmedEmpty(string);
+    }
+
+
+    private Strings() {
+
+        super();
+    }
 
 
 }

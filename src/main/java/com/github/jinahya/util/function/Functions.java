@@ -62,9 +62,26 @@ public final class Functions {
         return new Function<T, T>() {
 
 
+            @Override
             public T apply(final T t) {
 
                 return t;
+            }
+
+
+        };
+    }
+
+
+    public static <T, U> Function<T, U> casting(final Class<U> type) {
+
+        return new Function<T, U>() {
+
+
+            @Override
+            public U apply(final T t) {
+
+                return type.cast(t);
             }
 
 

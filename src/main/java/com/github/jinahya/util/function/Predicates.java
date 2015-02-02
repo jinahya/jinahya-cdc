@@ -22,7 +22,7 @@ package com.github.jinahya.util.function;
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
  */
-public class Predicates {
+public final class Predicates {
 
 
     public static final Predicate<?> PASS = new Predicate<Object>() {
@@ -142,6 +142,28 @@ public class Predicates {
 
 
         };
+    }
+
+
+    public static <T> Predicate<T> isInstanceOf(final Class<?> type) {
+
+        return new Predicate<T>() {
+
+
+            @Override
+            public boolean test(final T t) {
+
+                return type.isInstance(t);
+            }
+
+
+        };
+    }
+
+
+    public static <T> Predicate<T> nonInstanceOf(final Class<?> type) {
+
+        return negate(Predicates.<T>isInstanceOf(type));
     }
 
 

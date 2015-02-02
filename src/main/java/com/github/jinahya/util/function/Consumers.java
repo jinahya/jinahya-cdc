@@ -18,6 +18,9 @@
 package com.github.jinahya.util.function;
 
 
+import java.util.Collection;
+
+
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
@@ -39,6 +42,58 @@ public final class Consumers {
 
 
         };
+    }
+
+
+    public static <T> Consumer<T> collecting(
+        final Collection<? super T> collection) {
+
+        return new Consumer<T>() {
+
+
+            @Override
+            public void accept(final T t) {
+
+                collection.add(t);
+            }
+
+
+        };
+
+    }
+
+
+    public static <T, U> Consumer<T> of(final Predicate<? super T> predicate,
+                                        final Function<T, U> function,
+                                        final Consumer<? super U> consumer) {
+
+        return new Consumer<T>() {
+
+
+            @Override
+            public void accept(final T t) {
+
+                if (predicate.test(t)) {
+                    consumer.accept(function.apply(t));
+                }
+            }
+
+
+        };
+    }
+
+
+    public static <T, U> Consumer<T> of(final Function<T, U> function,
+                                        final Consumer<? super U> consumer) {
+
+        return of(Predicates.pass(), function, consumer);
+    }
+
+
+    public static <T> Consumer<T> of(final Predicate<? super T> predicate,
+                                     final Consumer<? super T> consumer) {
+
+        return of(predicate, Functions.<T>identity(), consumer);
     }
 
 

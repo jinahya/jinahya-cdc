@@ -22,6 +22,8 @@ package com.github.jinahya.util.function;
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
  * @param <T>
+ *
+ * @see java.util.function.Consumer
  */
 public interface Consumer<T> {
 
