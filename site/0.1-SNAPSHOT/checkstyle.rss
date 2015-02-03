@@ -25,8 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2014 - 2015</copyright>
     <item>
-      <title>File: 10,
-             Errors: 70,
+      <title>File: 66,
+             Errors: 312,
              Warnings: 0,
              Infos: 0
       </title>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.Predicates.java">com/github/jinahya/util/function/Predicates.java</a>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.Strings.java">com/github/jinahya/util/Strings.java</a>
                 </td>
                 <td>
                   0
@@ -55,7 +55,357 @@ under the License.
                   0
                 </td>
                 <td>
-                  12
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.IntToDoubleFunction.java">com/github/jinahya/util/function/IntToDoubleFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.ToLongBiFunction.java">com/github/jinahya/util/function/ToLongBiFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.BiFunction.java">com/github/jinahya/util/function/BiFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.DefaultHolder.java">com/github/jinahya/util/DefaultHolder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.DoublePredicate.java">com/github/jinahya/util/function/DoublePredicate.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.ObjIntConsumer.java">com/github/jinahya/util/function/ObjIntConsumer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.LongPredicates.java">com/github/jinahya/util/function/LongPredicates.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.Consumers.java">com/github/jinahya/util/function/Consumers.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.BiFunctions.java">com/github/jinahya/util/function/BiFunctions.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.IntPredicates.java">com/github/jinahya/util/function/IntPredicates.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.ToIntFunction.java">com/github/jinahya/util/function/ToIntFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.UnaryOperators.java">com/github/jinahya/util/function/UnaryOperators.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.BinaryOperators.java">com/github/jinahya/util/function/BinaryOperators.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.BiConsumers.java">com/github/jinahya/util/function/BiConsumers.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.IntSupplier.java">com/github/jinahya/util/function/IntSupplier.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.Function.java">com/github/jinahya/util/function/Function.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.BinaryOperator.java">com/github/jinahya/util/function/BinaryOperator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.DoublePredicates.java">com/github/jinahya/util/function/DoublePredicates.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.LongConsumers.java">com/github/jinahya/util/function/LongConsumers.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.ToLongFunction.java">com/github/jinahya/util/function/ToLongFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.BiConsumer.java">com/github/jinahya/util/function/BiConsumer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.DoubleToIntFunction.java">com/github/jinahya/util/function/DoubleToIntFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.LongSupplier.java">com/github/jinahya/util/function/LongSupplier.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.Objects.java">com/github/jinahya/util/Objects.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.ToDoubleBiFunction.java">com/github/jinahya/util/function/ToDoubleBiFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
                 </td>
               </tr>
                           <tr>
@@ -74,7 +424,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.Strings.java">com/github/jinahya/util/Strings.java</a>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.Holder.java">com/github/jinahya/util/Holder.java</a>
                 </td>
                 <td>
                   0
@@ -83,12 +433,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  6
+                  2
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.Function.java">com/github/jinahya/util/function/Function.java</a>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.DoubleUnaryOperator.java">com/github/jinahya/util/function/DoubleUnaryOperator.java</a>
                 </td>
                 <td>
                   0
@@ -97,21 +447,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.Functions.java">com/github/jinahya/util/function/Functions.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  7
+                  2
                 </td>
               </tr>
                           <tr>
@@ -130,7 +466,175 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.Consumer.java">com/github/jinahya/util/function/Consumer.java</a>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.IntUnaryOperator.java">com/github/jinahya/util/function/IntUnaryOperator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.LongToIntFunction.java">com/github/jinahya/util/function/LongToIntFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.DoubleToLongFunction.java">com/github/jinahya/util/function/DoubleToLongFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.LongUnaryOperator.java">com/github/jinahya/util/function/LongUnaryOperator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.Predicates.java">com/github/jinahya/util/function/Predicates.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.BiPredicate.java">com/github/jinahya/util/function/BiPredicate.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.LongFunction.java">com/github/jinahya/util/function/LongFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.LongToDoubleFunction.java">com/github/jinahya/util/function/LongToDoubleFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.SynchronizedHolder.java">com/github/jinahya/util/SynchronizedHolder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.DoubleBinaryOperator.java">com/github/jinahya/util/function/DoubleBinaryOperator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.IntFunction.java">com/github/jinahya/util/function/IntFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.LongPredicate.java">com/github/jinahya/util/function/LongPredicate.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.DoubleConsumer.java">com/github/jinahya/util/function/DoubleConsumer.java</a>
                 </td>
                 <td>
                   0
@@ -140,6 +644,174 @@ under the License.
                 </td>
                 <td>
                   1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.DoubleUnaryOperators.java">com/github/jinahya/util/function/DoubleUnaryOperators.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.ToDoubleFunction.java">com/github/jinahya/util/function/ToDoubleFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.IntPredicate.java">com/github/jinahya/util/function/IntPredicate.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.DoubleSupplier.java">com/github/jinahya/util/function/DoubleSupplier.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.UnaryOperator.java">com/github/jinahya/util/function/UnaryOperator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.BiPredicates.java">com/github/jinahya/util/function/BiPredicates.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.IntToLongFunction.java">com/github/jinahya/util/function/IntToLongFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.DoubleConsumers.java">com/github/jinahya/util/function/DoubleConsumers.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.Functions.java">com/github/jinahya/util/function/Functions.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.IntBinaryOperator.java">com/github/jinahya/util/function/IntBinaryOperator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.LongConsumer.java">com/github/jinahya/util/function/LongConsumer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.IntUnaryOperators.java">com/github/jinahya/util/function/IntUnaryOperators.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
                 </td>
               </tr>
                           <tr>
@@ -158,7 +830,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.Consumers.java">com/github/jinahya/util/function/Consumers.java</a>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.DoubleFunction.java">com/github/jinahya/util/function/DoubleFunction.java</a>
                 </td>
                 <td>
                   0
@@ -167,12 +839,12 @@ under the License.
                   0
                 </td>
                 <td>
-                  6
+                  2
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.Objects.java">com/github/jinahya/util/Objects.java</a>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.ObjDoubleConsumer.java">com/github/jinahya/util/function/ObjDoubleConsumer.java</a>
                 </td>
                 <td>
                   0
@@ -181,7 +853,119 @@ under the License.
                   0
                 </td>
                 <td>
-                  19
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.IntConsumers.java">com/github/jinahya/util/function/IntConsumers.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.LongUnaryOperators.java">com/github/jinahya/util/function/LongUnaryOperators.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  13
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.ToIntBiFunction.java">com/github/jinahya/util/function/ToIntBiFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.ObjLongConsumer.java">com/github/jinahya/util/function/ObjLongConsumer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.IntConsumer.java">com/github/jinahya/util/function/IntConsumer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.BooleanSupplier.java">com/github/jinahya/util/function/BooleanSupplier.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.Consumer.java">com/github/jinahya/util/function/Consumer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.LongBinaryOperator.java">com/github/jinahya/util/function/LongBinaryOperator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
                 </td>
               </tr>
                       </tbody>
