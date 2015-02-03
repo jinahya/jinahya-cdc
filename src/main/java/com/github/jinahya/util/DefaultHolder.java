@@ -15,26 +15,46 @@
  */
 
 
-package com.github.jinahya.util.function;
+package com.github.jinahya.util;
 
 
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T>
- *
- * @see java.util.function.Supplier
+ * @param <T> holdee type parameter
  */
-public interface Supplier<T> {
+public class DefaultHolder<T> implements Holder<T> {
 
 
-    /**
-     *
-     * @return
-     *
-     * @see java.util.function.Supplier#get()
-     */
-    T get();
+    public DefaultHolder(final T holdee) {
+
+        super();
+
+        this.holdee = holdee;
+    }
+
+
+    public DefaultHolder() {
+
+        this(null);
+    }
+
+
+    @Override
+    public T get() {
+
+        return holdee;
+    }
+
+
+    @Override
+    public void set(final T holdee) {
+
+        this.holdee = holdee;
+    }
+
+
+    private T holdee;
 
 
 }

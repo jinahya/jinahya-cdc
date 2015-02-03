@@ -28,6 +28,12 @@ package com.github.jinahya.util.function;
 public interface Consumer<T> {
 
 
+    /**
+     *
+     * @param t
+     *
+     * @see java.util.function.Consumer#accept(java.lang.Object)
+     */
     void accept(T t);
 
 

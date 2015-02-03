@@ -23,18 +23,20 @@ package com.github.jinahya.util.function;
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
  * @param <T>
  *
- * @see java.util.function.Supplier
+ * @see java.util.function.ToLongFunction
  */
-public interface Supplier<T> {
+public interface ToLongFunction<T> {
 
 
     /**
      *
+     * @param t
+     *
      * @return
      *
-     * @see java.util.function.Supplier#get()
+     * @see java.util.function.ToLongFunction#applyAsLong(java.lang.Object)
      */
-    T get();
+    long applyAsLong(T t);
 
 
 }

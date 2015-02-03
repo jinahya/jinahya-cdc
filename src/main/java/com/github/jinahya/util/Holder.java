@@ -15,26 +15,21 @@
  */
 
 
-package com.github.jinahya.util.function;
+package com.github.jinahya.util;
 
 
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T>
- *
- * @see java.util.function.Supplier
+ * @param <T> holdee type parameter
  */
-public interface Supplier<T> {
+public interface Holder<T> {
 
 
-    /**
-     *
-     * @return
-     *
-     * @see java.util.function.Supplier#get()
-     */
     T get();
+
+
+    void set(final T holdee);
 
 
 }

@@ -21,20 +21,21 @@ package com.github.jinahya.util.function;
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T>
  *
- * @see java.util.function.Supplier
+ * @see java.util.function.LongUnaryOperator
  */
-public interface Supplier<T> {
+public interface LongUnaryOperator {
 
 
     /**
      *
+     * @param operand
+     *
      * @return
      *
-     * @see java.util.function.Supplier#get()
+     * @see java.util.function.LongUnaryOperator#applyAsLong(long)
      */
-    T get();
+    long applyAsLong(long operand);
 
 
 }

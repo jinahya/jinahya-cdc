@@ -21,20 +21,21 @@ package com.github.jinahya.util.function;
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T>
  *
- * @see java.util.function.Supplier
+ * @see java.util.function.LongPredicate
  */
-public interface Supplier<T> {
+public interface LongPredicate {
 
 
     /**
      *
+     * @param value
+     *
      * @return
      *
-     * @see java.util.function.Supplier#get()
+     * @see java.util.function.LongPredicate#test(long)
      */
-    T get();
+    boolean test(long value);
 
 
 }

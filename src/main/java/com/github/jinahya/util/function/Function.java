@@ -23,10 +23,20 @@ package com.github.jinahya.util.function;
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
  * @param <T>
  * @param <R>
+ *
+ * @see java.util.function.Function
  */
 public interface Function<T, R> {
 
 
+    /**
+     *
+     * @param t
+     *
+     * @return
+     *
+     * @see java.util.function.Function#apply(java.lang.Object)
+     */
     R apply(T t);
 
 

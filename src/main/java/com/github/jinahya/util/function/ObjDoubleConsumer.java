@@ -23,18 +23,20 @@ package com.github.jinahya.util.function;
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
  * @param <T>
  *
- * @see java.util.function.Supplier
+ * @see java.util.function.ObjDoubleConsumer
  */
-public interface Supplier<T> {
+public interface ObjDoubleConsumer<T> {
 
 
     /**
      *
-     * @return
+     * @param t
+     * @param value
      *
-     * @see java.util.function.Supplier#get()
+     * @see java.util.function.ObjDoubleConsumer#accept(java.lang.Object,
+     * double)
      */
-    T get();
+    void accept(T t, double value);
 
 
 }

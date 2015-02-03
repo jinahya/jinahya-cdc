@@ -15,26 +15,44 @@
  */
 
 
-package com.github.jinahya.util.function;
+package com.github.jinahya.util;
 
 
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T>
- *
- * @see java.util.function.Supplier
+ * @param <T> holdee type parameter
  */
-public interface Supplier<T> {
+public class SynchronizedHolder<T> implements Holder<T> {
 
 
-    /**
-     *
-     * @return
-     *
-     * @see java.util.function.Supplier#get()
-     */
-    T get();
+    public SynchronizedHolder(final T holdee) {
+
+        super();
+
+        this.holdee = holdee;
+    }
+
+
+    public SynchronizedHolder() {
+
+        this(null);
+    }
+
+
+    public synchronized T get() {
+
+        return holdee;
+    }
+
+
+    public synchronized void set(final T holdee) {
+
+        this.holdee = holdee;
+    }
+
+
+    private volatile T holdee;
 
 
 }

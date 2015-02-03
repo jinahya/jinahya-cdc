@@ -18,23 +18,39 @@
 package com.github.jinahya.util.function;
 
 
+import com.github.jinahya.util.Objects;
+
+
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T>
- *
- * @see java.util.function.Supplier
  */
-public interface Supplier<T> {
+public final class DoubleConsumers {
 
 
-    /**
-     *
-     * @return
-     *
-     * @see java.util.function.Supplier#get()
-     */
-    T get();
+    public static DoubleConsumer andThen(final DoubleConsumer consumer,
+                                         final DoubleConsumer after) {
+
+        Objects.requireNonNull(consumer);
+        Objects.requireNonNull(after);
+
+        return new DoubleConsumer() {
+
+            @Override
+            public void accept(final double value) {
+
+                consumer.accept(value);
+                after.accept(value);
+            }
+
+        };
+    }
+
+
+    private DoubleConsumers() {
+
+        super();
+    }
 
 
 }

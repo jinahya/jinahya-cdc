@@ -23,19 +23,9 @@ package com.github.jinahya.util.function;
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
  * @param <T>
  *
- * @see java.util.function.Supplier
+ * @see java.util.function.BinaryOperator
  */
-public interface Supplier<T> {
-
-
-    /**
-     *
-     * @return
-     *
-     * @see java.util.function.Supplier#get()
-     */
-    T get();
-
+public interface BinaryOperator<T> extends BiFunction<T, T, T> {
 
 }
 

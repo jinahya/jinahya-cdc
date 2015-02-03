@@ -21,20 +21,19 @@ package com.github.jinahya.util.function;
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T>
  *
- * @see java.util.function.Supplier
+ * @see java.util.function.LongConsumer
  */
-public interface Supplier<T> {
+public interface LongConsumer {
 
 
     /**
      *
-     * @return
+     * @param value
      *
-     * @see java.util.function.Supplier#get()
+     * @see java.util.function.LongConsumer#accept(long)
      */
-    T get();
+    void accept(long value);
 
 
 }

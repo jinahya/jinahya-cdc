@@ -18,23 +18,49 @@
 package com.github.jinahya.util.function;
 
 
+import com.github.jinahya.util.Objects;
+
+
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T>
- *
- * @see java.util.function.Supplier
  */
-public interface Supplier<T> {
+public final class LongConsumers {
 
 
     /**
      *
+     * @param consumer
+     * @param after
+     *
      * @return
      *
-     * @see java.util.function.Supplier#get()
+     * @see
+     * java.util.function.LongConsumer#andThen(java.util.function.LongConsumer)
      */
-    T get();
+    public static LongConsumer andThen(final LongConsumer consumer,
+                                       final LongConsumer after) {
+
+        Objects.requireNonNull(consumer);
+        Objects.requireNonNull(after);
+
+        return new LongConsumer() {
+
+            @Override
+            public void accept(final long value) {
+
+                consumer.accept(value);
+                after.accept(value);
+            }
+
+        };
+    }
+
+
+    private LongConsumers() {
+
+        super();
+    }
 
 
 }

@@ -22,19 +22,24 @@ package com.github.jinahya.util.function;
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
  * @param <T>
+ * @param <U>
  *
- * @see java.util.function.Supplier
+ * @see java.util.function.ToLongBiFunction
  */
-public interface Supplier<T> {
+public interface ToLongBiFunction<T, U> {
 
 
     /**
      *
+     * @param t
+     * @param u
+     *
      * @return
      *
-     * @see java.util.function.Supplier#get()
+     * @see java.util.function.ToLongBiFunction#applyAsLong(java.lang.Object,
+     * java.lang.Object)
      */
-    T get();
+    long applyAsLong(T t, U u);
 
 
 }

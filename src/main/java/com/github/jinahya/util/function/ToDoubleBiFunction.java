@@ -22,19 +22,25 @@ package com.github.jinahya.util.function;
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
  * @param <T>
+ * @param <U>
  *
- * @see java.util.function.Supplier
+ * @see java.util.function.ToDoubleBiFunction
  */
-public interface Supplier<T> {
+public interface ToDoubleBiFunction<T, U> {
 
 
     /**
      *
+     * @param t
+     * @param u
+     *
      * @return
      *
-     * @see java.util.function.Supplier#get()
+     * @see
+     * java.util.function.ToDoubleBiFunction#applyAsDouble(java.lang.Object,
+     * java.lang.Object)
      */
-    T get();
+    double applyAsDouble(T t, U u);
 
 
 }

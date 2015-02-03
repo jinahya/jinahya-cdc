@@ -21,20 +21,21 @@ package com.github.jinahya.util.function;
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T>
  *
- * @see java.util.function.Supplier
+ * @see java.util.function.LongToDoubleFunction
  */
-public interface Supplier<T> {
+public interface LongToDoubleFunction {
 
 
     /**
      *
+     * @param value
+     *
      * @return
      *
-     * @see java.util.function.Supplier#get()
+     * @see java.util.function.LongToDoubleFunction#applyAsDouble(long)
      */
-    T get();
+    double applyAsDouble(long value);
 
 
 }

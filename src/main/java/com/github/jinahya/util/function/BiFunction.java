@@ -22,19 +22,25 @@ package com.github.jinahya.util.function;
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
  * @param <T>
+ * @param <U>
+ * @param <R>
  *
- * @see java.util.function.Supplier
+ * @see java.util.function.BiFunction
  */
-public interface Supplier<T> {
+public interface BiFunction<T, U, R> {
 
 
     /**
      *
+     * @param t
+     * @param u
+     *
      * @return
      *
-     * @see java.util.function.Supplier#get()
+     * @see java.util.function.BiFunction#apply(java.lang.Object,
+     * java.lang.Object)
      */
-    T get();
+    R apply(T t, U u);
 
 
 }

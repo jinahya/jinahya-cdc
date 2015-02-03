@@ -25,7 +25,10 @@ package com.github.jinahya.util.function;
 public final class Predicates {
 
 
-    public static final Predicate<?> PASS = new Predicate<Object>() {
+    /**
+     * A constant always matches.
+     */
+    public static final Predicate<?> MATCHES = new Predicate<Object>() {
 
         @Override
         public boolean test(final Object t) {
@@ -36,18 +39,14 @@ public final class Predicates {
     };
 
 
-    public static final Predicate<?> FAIL = new Predicate<Object>() {
-
-        @Override
-        public boolean test(final Object t) {
-
-            return false;
-        }
-
-    };
-
-
-    public static <T> Predicate<T> pass() {
+    /**
+     * Creates a predicate which always matches regardless of input.
+     *
+     * @param <T> the type of the input to the predicate
+     *
+     * @return a new instance
+     */
+    public static <T> Predicate<T> matches() {
 
         return new Predicate<T>() {
 
@@ -61,34 +60,47 @@ public final class Predicates {
     }
 
 
-    public static <T> Predicate<T> fail() {
-
-        return new Predicate<T>() {
-
-            @Override
-            public boolean test(final T t) {
-
-                return false;
-            }
-
-        };
-    }
-
-
-    public static <T> Predicate<T> and(final Predicate<T> p,
+    /**
+     *
+     * @param <T>
+     * @param predicate
+     * @param other
+     *
+     * @return
+     *
+     * @see java.util.function.Predicate#and(java.util.function.Predicate)
+     */
+    public static <T> Predicate<T> and(final Predicate<T> predicate,
                                        final Predicate<? super T> other) {
 
+        if (predicate == null) {
+            throw new NullPointerException("null predicate");
+        }
+
+        if (other == null) {
+            throw new NullPointerException("null other");
+        }
+
         return new Predicate<T>() {
 
             public boolean test(final T t) {
 
-                return p.test(t) && other.test(t);
+                return predicate.test(t) && other.test(t);
             }
 
         };
     }
 
 
+    /**
+     *
+     * @param <T>
+     * @param targetRef
+     *
+     * @return
+     *
+     * @see java.util.function.Predicate#isEqual(java.lang.Object)
+     */
     public static <T> Predicate<T> isEqual(final Object targetRef) {
 
         return new Predicate<T>() {
@@ -102,27 +114,58 @@ public final class Predicates {
     }
 
 
-    public static <T> Predicate<T> negate(final Predicate<T> p) {
+    /**
+     *
+     * @param <T>
+     * @param predicate
+     *
+     * @return
+     *
+     * @see java.util.function.Predicate#negate()
+     */
+    public static <T> Predicate<T> negate(final Predicate<T> predicate) {
+
+        if (predicate == null) {
+            throw new NullPointerException("null predicate");
+        }
 
         return new Predicate<T>() {
 
             public boolean test(final T t) {
 
-                return !p.test(t);
+                return !predicate.test(t);
             }
 
         };
     }
 
 
-    public static <T> Predicate<T> or(final Predicate<T> p,
+    /**
+     *
+     * @param <T>
+     * @param predicate
+     * @param other
+     *
+     * @return
+     *
+     * @see java.util.function.Predicate#or(java.util.function.Predicate)
+     */
+    public static <T> Predicate<T> or(final Predicate<T> predicate,
                                       final Predicate<? super T> other) {
+
+        if (predicate == null) {
+            throw new NullPointerException("null predicate");
+        }
+
+        if (other == null) {
+            throw new NullPointerException("null other");
+        }
 
         return new Predicate<T>() {
 
             public boolean test(final T t) {
 
-                return p.test(t) || other.test(t);
+                return predicate.test(t) || other.test(t);
             }
 
         };

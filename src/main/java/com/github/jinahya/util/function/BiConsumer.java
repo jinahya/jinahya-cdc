@@ -22,19 +22,22 @@ package com.github.jinahya.util.function;
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
  * @param <T>
+ * @param <U>
  *
- * @see java.util.function.Supplier
+ * @see java.util.function.BiConsumer
  */
-public interface Supplier<T> {
+public interface BiConsumer<T, U> {
 
 
     /**
      *
-     * @return
+     * @param t
+     * @param u
      *
-     * @see java.util.function.Supplier#get()
+     * @see java.util.function.BiConsumer#accept(java.lang.Object,
+     * java.lang.Object)
      */
-    T get();
+    void accept(T t, U u);
 
 
 }

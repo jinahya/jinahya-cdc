@@ -23,18 +23,20 @@ package com.github.jinahya.util.function;
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
  * @param <T>
  *
- * @see java.util.function.Supplier
+ * @see java.util.function.ToIntFunction
  */
-public interface Supplier<T> {
+public interface ToIntFunction<T> {
 
 
     /**
      *
+     * @param t
+     *
      * @return
      *
-     * @see java.util.function.Supplier#get()
+     * @see java.util.function.ToIntFunction#applyAsInt(java.lang.Object)
      */
-    T get();
+    int applyAsInt(T t);
 
 
 }

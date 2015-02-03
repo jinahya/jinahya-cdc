@@ -18,6 +18,9 @@
 package com.github.jinahya.util.function;
 
 
+import com.github.jinahya.util.Objects;
+
+
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
@@ -25,42 +28,78 @@ package com.github.jinahya.util.function;
 public final class Functions {
 
 
+    /**
+     *
+     * @param <T>
+     * @param <R>
+     * @param <V>
+     * @param function
+     * @param after
+     *
+     * @return
+     *
+     * @see java.util.function.Function#andThen(java.util.function.Function)
+     */
     public static <T, R, V> Function<T, V> andThen(
-        final Function<T, R> f, final Function<? super R, ? extends V> after) {
+        final Function<T, R> function,
+        final Function<? super R, ? extends V> after) {
+
+        Objects.requireNonNull(function);
+        Objects.requireNonNull(after);
 
         return new Function<T, V>() {
 
-
             @Override
             public V apply(final T t) {
-                return after.apply(f.apply(t));
+                return after.apply(function.apply(t));
             }
-
 
         };
     }
 
 
+    /**
+     *
+     * @param <V>
+     * @param <T>
+     * @param <R>
+     * @param function
+     * @param before
+     *
+     * @return
+     *
+     * @see java.util.function.Function#compose(java.util.function.Function)
+     */
     public static <V, T, R> Function<V, R> compose(
-        final Function<? super V, ? extends T> before, final Function<T, R> f) {
+        final Function<T, R> function,
+        final Function<? super V, ? extends T> before) {
+
+        Objects.requireNonNull(function);
+        Objects.requireNonNull(before);
 
         return new Function<V, R>() {
 
+            @Override
+            public R apply(final V v) {
 
-            public R apply(V v) {
-
-                return f.apply(before.apply(v));
+                return function.apply(before.apply(v));
             }
-
 
         };
     }
 
 
+    /**
+     *
+     * @param <T>
+     *
+     * @return
+     *
+     * @see java.util.function.Function#identity()
+     */
     public static <T> Function<T, T> identity() {
 
         return new Function<T, T>() {
-
 
             @Override
             public T apply(final T t) {
@@ -68,22 +107,23 @@ public final class Functions {
                 return t;
             }
 
-
         };
     }
 
 
     public static <T, U> Function<T, U> casting(final Class<U> type) {
 
-        return new Function<T, U>() {
+        if (type == null) {
+            throw new NullPointerException("null type");
+        }
 
+        return new Function<T, U>() {
 
             @Override
             public U apply(final T t) {
 
                 return type.cast(t);
             }
-
 
         };
     }

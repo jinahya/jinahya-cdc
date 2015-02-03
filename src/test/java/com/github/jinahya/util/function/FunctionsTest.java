@@ -18,23 +18,23 @@
 package com.github.jinahya.util.function;
 
 
+import org.testng.annotations.Test;
+
+
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T>
- *
- * @see java.util.function.Supplier
  */
-public interface Supplier<T> {
+public class FunctionsTest {
 
 
-    /**
-     *
-     * @return
-     *
-     * @see java.util.function.Supplier#get()
-     */
-    T get();
+    @Test
+    public static void andThenWithUnaryOerator() {
+
+        final UnaryOperator<?> operator = (Object t) -> null;
+
+        Functions.andThen(operator, (Object t) -> null);
+    }
 
 
 }

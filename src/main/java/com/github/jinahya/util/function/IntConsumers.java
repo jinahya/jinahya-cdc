@@ -21,20 +21,48 @@ package com.github.jinahya.util.function;
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T>
- *
- * @see java.util.function.Supplier
  */
-public interface Supplier<T> {
+public class IntConsumers {
 
 
     /**
      *
+     * @param consumer
+     * @param after
+     *
      * @return
      *
-     * @see java.util.function.Supplier#get()
+     * @see
+     * java.util.function.IntConsumer#andThen(java.util.function.IntConsumer)
      */
-    T get();
+    public static IntConsumer andThen(final IntConsumer consumer,
+                                      final IntConsumer after) {
+
+        if (consumer == null) {
+            throw new NullPointerException("null consumer");
+        }
+
+        if (after == null) {
+            throw new NullPointerException("null after");
+        }
+
+        return new IntConsumer() {
+
+            @Override
+            public void accept(final int value) {
+
+                consumer.accept(value);
+                after.accept(value);
+            }
+
+        };
+    }
+
+
+    private IntConsumers() {
+
+        super();
+    }
 
 
 }

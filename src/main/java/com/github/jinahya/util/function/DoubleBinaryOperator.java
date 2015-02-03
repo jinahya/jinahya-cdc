@@ -21,20 +21,23 @@ package com.github.jinahya.util.function;
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T>
  *
- * @see java.util.function.Supplier
+ * @see java.util.function.DoubleBinaryOperator
  */
-public interface Supplier<T> {
+public interface DoubleBinaryOperator {
 
 
     /**
      *
+     * @param left
+     * @param right
+     *
      * @return
      *
-     * @see java.util.function.Supplier#get()
+     * @see java.util.function.DoubleBinaryOperator#applyAsDouble(double,
+     * double)
      */
-    T get();
+    double applyAsDouble(double left, double right);
 
 
 }

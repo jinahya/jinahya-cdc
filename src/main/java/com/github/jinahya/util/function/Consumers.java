@@ -28,6 +28,16 @@ import java.util.Collection;
 public final class Consumers {
 
 
+    /**
+     *
+     * @param <T>
+     * @param before
+     * @param after
+     *
+     * @return
+     *
+     * @see java.util.function.Consumer#andThen(java.util.function.Consumer)
+     */
     public static <T> Consumer<T> andThen(final Consumer<T> before,
                                           final Consumer<? super T> after) {
 
@@ -80,7 +90,7 @@ public final class Consumers {
     public static <T, U> Consumer<T> of(final Function<T, U> function,
                                         final Consumer<? super U> consumer) {
 
-        return of(Predicates.pass(), function, consumer);
+        return of(Predicates.matches(), function, consumer);
     }
 
 
