@@ -35,6 +35,18 @@ import java.util.Comparator;
 public final class Objects {
 
 
+    /**
+     *
+     * @param <T>
+     * @param a
+     * @param b
+     * @param c
+     *
+     * @return
+     *
+     * @see java.util.Objects#compare(java.lang.Object, java.lang.Object,
+     * java.util.Comparator)
+     */
     public static <T> int compare(final T a, final T b,
                                   final Comparator<? super T> c) {
 
@@ -74,14 +86,29 @@ public final class Objects {
 //            return equals;
 //        }
 //    }
-
-
+    /**
+     *
+     * @param a
+     * @param b
+     *
+     * @return
+     *
+     * @see java.util.Objects#equals(java.lang.Object, java.lang.Object)
+     */
     public static boolean equals(final Object a, final Object b) {
 
         return a == null ? b == null : a.equals(b);
     }
 
 
+    /**
+     *
+     * @param values
+     *
+     * @return
+     *
+     * @see java.util.Objects#hash(java.lang.Object...)
+     */
     public static int hash(final Object... values) {
 
         if (values == null) {
@@ -98,30 +125,73 @@ public final class Objects {
     }
 
 
+    /**
+     *
+     * @param o
+     *
+     * @return
+     *
+     * @see java.util.Objects#hashCode(java.lang.Object)
+     */
     public static int hashCode(final Object o) {
 
         return o != null ? o.hashCode() : 0;
     }
 
 
+    /**
+     *
+     * @param obj
+     *
+     * @return
+     *
+     * @see java.util.Objects#isNull(java.lang.Object)
+     */
     public static boolean isNull(final Object obj) {
 
         return obj == null;
     }
 
 
+    /**
+     *
+     * @param obj
+     *
+     * @return
+     *
+     * @see java.util.Objects#nonNull(java.lang.Object)
+     */
     public static boolean nonNull(final Object obj) {
 
         return !isNull(obj);
     }
 
 
+    /**
+     *
+     * @param <T>
+     * @param obj
+     *
+     * @return
+     *
+     * @see java.util.Objects#requireNonNull(java.lang.Object)
+     */
     public static <T> T requireNonNull(final T obj) {
 
         return requireNonNull(obj, "null");
     }
 
 
+    /**
+     *
+     * @param <T>
+     * @param obj
+     * @param message
+     *
+     * @return
+     *
+     * @see java.util.Objects#requireNonNull(java.lang.Object, java.lang.String)
+     */
     public static <T> T requireNonNull(final T obj, final String message) {
 
         if (obj == null) {
@@ -132,6 +202,17 @@ public final class Objects {
     }
 
 
+    /**
+     *
+     * @param <T>
+     * @param obj
+     * @param messageSupplier
+     *
+     * @return
+     *
+     * @see java.util.Objects#requireNonNull(java.lang.Object,
+     * java.util.function.Supplier)
+     */
     public static <T> T requireNonNull(final T obj,
                                        final Supplier<String> messageSupplier) {
 
@@ -143,12 +224,29 @@ public final class Objects {
     }
 
 
+    /**
+     *
+     * @param o
+     *
+     * @return
+     *
+     * @see java.util.Objects#toString(java.lang.Object)
+     */
     public static String toString(final Object o) {
 
         return toString(o, "null");
     }
 
 
+    /**
+     *
+     * @param o
+     * @param nullDefault
+     *
+     * @return
+     *
+     * @see java.util.Objects#toString(java.lang.Object, java.lang.String)
+     */
     public static String toString(final Object o, final String nullDefault) {
 
         return o == null ? nullDefault : o.toString();

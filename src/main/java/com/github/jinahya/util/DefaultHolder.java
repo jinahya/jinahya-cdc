@@ -21,40 +21,34 @@ package com.github.jinahya.util;
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T> holdee type parameter
+ * @param <T> value type parameter
  */
 public class DefaultHolder<T> implements Holder<T> {
 
 
-    public DefaultHolder(final T holdee) {
+    public DefaultHolder(final T value) {
 
         super();
 
-        this.holdee = holdee;
-    }
-
-
-    public DefaultHolder() {
-
-        this(null);
+        this.value = value;
     }
 
 
     @Override
     public T get() {
 
-        return holdee;
+        return value;
     }
 
 
     @Override
-    public void set(final T holdee) {
+    public void set(final T value) {
 
-        this.holdee = holdee;
+        this.value = value;
     }
 
 
-    private T holdee;
+    private T value;
 
 
 }

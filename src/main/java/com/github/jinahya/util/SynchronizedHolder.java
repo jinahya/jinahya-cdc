@@ -21,38 +21,34 @@ package com.github.jinahya.util;
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T> holdee type parameter
+ * @param <T> value type parameter
  */
 public class SynchronizedHolder<T> implements Holder<T> {
 
 
-    public SynchronizedHolder(final T holdee) {
+    public SynchronizedHolder(final T value) {
 
         super();
 
-        this.holdee = holdee;
+        this.value = value;
     }
 
 
-    public SynchronizedHolder() {
-
-        this(null);
-    }
-
-
+    @Override
     public synchronized T get() {
 
-        return holdee;
+        return value;
     }
 
 
-    public synchronized void set(final T holdee) {
+    @Override
+    public synchronized void set(final T value) {
 
-        this.holdee = holdee;
+        this.value = value;
     }
 
 
-    private volatile T holdee;
+    private volatile T value;
 
 
 }

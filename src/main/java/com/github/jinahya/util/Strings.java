@@ -27,7 +27,7 @@ public final class Strings {
 
     public static boolean isEmpty(final String string) {
 
-        return string.isEmpty();
+        return Objects.requireNonNull(string, "null string").isEmpty();
     }
 
 
@@ -39,7 +39,7 @@ public final class Strings {
 
     public static boolean isTrimmedEmpty(final String string) {
 
-        return string.trim().isEmpty();
+        return Objects.requireNonNull(string, "null string").trim().isEmpty();
     }
 
 

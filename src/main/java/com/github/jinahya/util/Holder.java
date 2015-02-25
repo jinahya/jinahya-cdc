@@ -21,15 +21,25 @@ package com.github.jinahya.util;
 /**
  *
  * @author Jin Kwon &lt;jinahya_at_gmail.com&gt;
- * @param <T> holdee type parameter
+ * @param <T> value type parameter
  */
 public interface Holder<T> {
 
 
+    /**
+     * Returns the value which this holder is currently holding.
+     *
+     * @return the current value.
+     */
     T get();
 
 
-    void set(final T holdee);
+    /**
+     * Replaces the value with specified one.
+     *
+     * @param value new value to hold.
+     */
+    void set(final T value);
 
 
 }
