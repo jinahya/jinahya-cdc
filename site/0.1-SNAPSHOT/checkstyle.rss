@@ -26,7 +26,7 @@ under the License.
     <copyright>&#169;2014 - 2015</copyright>
     <item>
       <title>File: 67,
-             Errors: 355,
+             Errors: 351,
              Warnings: 0,
              Infos: 0
       </title>
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.ToLongBiFunction.java">com/github/jinahya/util/function/ToLongBiFunction.java</a>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.BiFunction.java">com/github/jinahya/util/function/BiFunction.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.BiFunction.java">com/github/jinahya/util/function/BiFunction.java</a>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.ToLongBiFunction.java">com/github/jinahya/util/function/ToLongBiFunction.java</a>
                 </td>
                 <td>
                   0
@@ -111,7 +111,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  7
+                  6
                 </td>
               </tr>
                           <tr>
@@ -153,7 +153,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  3
                 </td>
               </tr>
                           <tr>
@@ -284,20 +284,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.Function.java">com/github/jinahya/util/function/Function.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.BinaryOperator.java">com/github/jinahya/util/function/BinaryOperator.java</a>
                 </td>
                 <td>
@@ -308,6 +294,20 @@ under the License.
                 </td>
                 <td>
                   0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.Function.java">com/github/jinahya/util/function/Function.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
                 </td>
               </tr>
                           <tr>
@@ -335,7 +335,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  5
+                  4
                 </td>
               </tr>
                           <tr>
@@ -363,7 +363,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  3
                 </td>
               </tr>
                           <tr>
@@ -475,7 +475,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  42
+                  38
                 </td>
               </tr>
                           <tr>
@@ -690,20 +690,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.IntPredicate.java">com/github/jinahya/util/function/IntPredicate.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.DoubleSupplier.java">com/github/jinahya/util/function/DoubleSupplier.java</a>
                 </td>
                 <td>
@@ -714,6 +700,20 @@ under the License.
                 </td>
                 <td>
                   1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.IntPredicate.java">com/github/jinahya/util/function/IntPredicate.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
                 </td>
               </tr>
                           <tr>
@@ -858,20 +858,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.ObjDoubleConsumer.java">com/github/jinahya/util/function/ObjDoubleConsumer.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.IntConsumers.java">com/github/jinahya/util/function/IntConsumers.java</a>
                 </td>
                 <td>
@@ -882,6 +868,20 @@ under the License.
                 </td>
                 <td>
                   5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://jinahya.github.io/jinahya-cdc/site/0.1-SNAPSHOT/checkstyle.html#com.github.jinahya.util.function.ObjDoubleConsumer.java">com/github/jinahya/util/function/ObjDoubleConsumer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
                 </td>
               </tr>
                           <tr>
